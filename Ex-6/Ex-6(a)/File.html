@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AJAX - Retrieving Text File</title>
+    <script>
+        function loadXMLDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("content").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "rec.txt", true);
+            xhttp.send();
+        }
+    </script>
+</head>
+<body>
+    <div id="content">Click the button to load content from the text file.</div>
+    <button onclick="loadXMLDoc()">Load Content</button>
+</body>
+</html>
