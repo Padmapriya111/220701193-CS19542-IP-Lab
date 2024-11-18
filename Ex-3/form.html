@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+    <div class="container">
+   
+    <form id ="form" method="post" action="#" onsubmit="return validateForm()">
+        <h1>Course Registration Form</h1><br>
+        <div class="inputs">
+        <label for="student_name">Student Name:</label>
+        <input type="text" id="student_name" name="student_name">
+        <span id="student_name_error" class="error"></span><br>
+    </div>
+
+    <div class="inputs">
+        <label for="rollno">Roll Number:</label>
+        <input type="text" id="rollno" name="rollno">
+        <span id="rollno_error" class="error"></span><br>
+    </div>
+
+    <div class="inputs">
+        <label for="gender">Gender:</label>
+        </div>
+        <input type="radio" id="male" name="gender" value="Male"> Male
+        <input type="radio" id="female" name="gender" value="Female"> Female
+        <span id="gender_error" class="error"></span><br><br>
+   
+
+        <div class="inputs">
+        <label for="year">Year:</label>
+        <select id="year" name="year">
+            <option value="Select Year">Select Year</option>
+            <option value="1st Year">1st Year</option>
+            <option value="2nd Year">2nd Year</option>
+            <option value="3rd Year">3rd Year</option>
+            <option value="4th Year">4th Year</option>
+        </select>
+        <span id="year_error" class="error"></span><br>
+    </div>
+
+        <div class="inputs">
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department">
+        <span id="department_error" class="error"></span><br>
+    </div>
+
+        <div class="inputs">
+        <label for="section">Section:</label>
+        <input type="text" id="section" name="section">
+        <span id="section_error" class="error"></span><br>
+    </div>
+
+        <div class="inputs">
+        <label for="mobile_no">Mobile Number:</label>
+        <input type="text" id="mobile_no" name="mobile_no">
+        <span id="mobile_no_error" class="error"></span><br>
+    </div>
+
+        <div class="inputs">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <span id="email_error" class="error"></span><br>
+    </div>
+
+        <div class="inputs">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="36"></textarea>
+        <span id="address_error" class="error"></span><br>
+    </div>
+
+        <div class="inputs">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city">
+        <span id="city_error" class="error"></span><br>
+    </div>
+
+        <div class="inputs">
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="Select Country">Select Country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+        </select>
+        <span id="country_error" class="error"></span><br>
+    </div>
+
+        <div class="inputs">
+        <label for="pincode">Pincode:</label>
+        <input type="text" id="pincode" name="pincode">
+        <span id="pincode_error" class="error"></span><br>
+    </div>
+
+        <button type="submit" value="Submit">submit</button>
+        <button type="reset" value="Clear">clear</button>
+    </form>
+</form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
